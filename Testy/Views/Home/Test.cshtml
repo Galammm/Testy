@@ -1,0 +1,155 @@
+﻿<nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+    <div class="container-fluid">
+        <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Testy</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+            <ul class="navbar-nav flex-grow-1">
+                <li class="nav-item">
+                    <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Index</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Reg">Reg</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Test">Test</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Homepage">Homepage</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Formpage">Formpage</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Homepage_Admin">HomepageAdmin</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Homepage</title>
+    <style>
+
+        .login {
+            background: white;
+            border-radius: 50px;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+
+        a:link {
+            text-decoration: none;
+        }
+
+        li {
+            display: inline;
+            float: right;
+        }
+
+        .dot {
+            height: 50px;
+            width: 50px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+        }
+
+    </style>
+</head>
+<body style="background-color:rgba(37, 150, 190, 0.85)">
+    <div class="login">
+
+
+        <div class="container-fluid">
+            <ul>
+
+
+                <li><a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index" style="font-size: 30px;">Logout</a> </li>
+
+                <div style="margin-left:30%">
+                    <select style="width:200px; height:50px;font-size: 30px; text-align:center ; border-radius: 30px; border: 2px white solid; margin-top:1%; margin-left:55%" name=" Department" id="Department">
+                        <option value="RD">Department</option>
+                        <option value="RR">RR</option>
+                        <option value="RE">RE</option>
+                        <option value="RI">RI</option>
+                        <option value="RI">RD</option>
+                    </select>
+                </div>
+
+                <span>
+                    <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Homepage_Admin"> <img src="~/images/websiteiconz-z1369260010730.png" style="width = 250 ;height=250 ; margin-top:auto% ;" /> </a>
+                </span>
+
+
+
+            </ul>
+
+        </div>
+
+
+
+
+        <p style="font-size: 60px; text-align:center ; margin-top:1px;"> Department : RD </p>
+        <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="ManageAdmin">   <button onclick="myFunction()" class="dot" style="width: 75px; height: 75px; background: rgba(102, 182, 210, 1) ; float:right;">  <img src="~/images/fluent-mdl2_document-management.png" style="width: 40px; height: 40px; " /> </button> </a>
+
+
+        <div>
+
+            <input class="center" type="search" value="Search" style="width:100;height:50px; font-size: 25px;  text-align:center ;  border-radius: 30px; border: 3px black solid;" />
+
+            <br />
+
+            <a style="text-decoration: none" asp-action="Formpage">
+                <p style="width: 100%; height: 60px; font-size:25px ;color:black ; background: white; box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25); border-radius: 30px; border: 1px black solid ;">  <img src="~/images/mingcute_document-fill.png" style="margin-top:10px;margin-left:1% " /> Receipt form </p>
+            </a>
+
+            <a style="text-decoration: none" asp-action="Formpage">
+                <p style="width: 100%; height: 60px; font-size:25px ; color:black ; background: white; box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25); border-radius: 30px; border: 1px black solid ;">  <img src="~/images/mingcute_document-fill.png" style="margin-top:10px;margin-left:1% " /> Annual leave form </p>
+            </a>
+
+            <a style="text-decoration: none" asp-action="Formpage">
+                <p style="width: 100%; height: 60px; font-size:25px ; color:black ; background: white; box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25); border-radius: 30px; border: 1px black solid ;">  <img src="~/images/mingcute_document-fill.png" style="margin-top:10px;margin-left:1% " /> Sick leave form </p>
+            </a>
+
+            <a style="text-decoration: none" asp-action="Formpage">
+                <p style="width: 100%; height: 60px; font-size:25px ; color:black ; background: white; box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25); border-radius: 30px; border: 1px black solid ;">  <img src="~/images/mingcute_document-fill.png" style="margin-top:10px;margin-left:1% " /> Business leave form </p>
+            </a>
+
+            <a style="text-decoration: none" asp-action="Formpage">
+                <p style="width: 100%; height: 60px; font-size:25px ; color:black ; background: white; box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25); border-radius: 30px; border: 1px black solid ;">  <img src="~/images/mingcute_document-fill.png" style="margin-top:10px;margin-left:1% " /> Handesome form </p>
+            </a>
+
+            <a style="text-decoration: none" asp-action="Formpage">
+                <p style="width: 100%; height: 60px; font-size:25px ; color:black ; background: white; box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25); border-radius: 30px; border: 1px black solid ;">  <img src="~/images/mingcute_document-fill.png" style="margin-top:10px;margin-left:1% " /> Information form </p>
+            </a>
+
+
+            <select class="kanit" style="font-size:20px;opacity: 0.65; border-radius: 30px; border:0;text-align :center; margin-left:370px; " name=" Department" id="Department">
+                <option value="RR">RR</option>
+                <option value="RE">RE</option>
+                <option value="RI">RI</option>
+                <option value="RD">RD</option>
+            </select>
+
+        </div>
+</body>
+</html>

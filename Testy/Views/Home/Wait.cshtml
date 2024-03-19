@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Homepage</title>
+    <style>
+
+
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+
+        a:link {
+            text-decoration: none;
+        }
+
+        li {
+            display: inline;
+            float: right;
+        }
+
+        .kanit {
+            font-family: "Kanit", sans-serif;
+        }
+
+        a.active, a:hover {
+            background: white;
+            transition: .5s;
+            color: rgb(37, 150, 190);
+        }
+
+        a {
+            padding: 15px 30px;
+            border-radius: 3px;
+            color: white;
+        }
+
+    </style>
+
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm mb-2" style="background-color:rgb(37, 150, 190);">
+        <div class="container-fluid">
+
+            <img src="~/images/websiteiconz-z1369260010730 2.png" width="150px" height="150px" />
+
+
+            <div class="container-fluid d-sm-inline-flex justify-content-between">
+                <ul class="navbar-nav justify-content-sm-start">
+                    <li>
+                        <a class="active , kanit " style="font-size: 18px;   margin-bottom:50%;margin-left:80px;" id="navItem" asp-area="" asp-controller="Home" asp-action="Wait">Document </a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav justify-content-sm-end">
+
+                    <li class="nav-item " id="navItem">
+                        <a class="kanit id=navItem" style=" font-size: 18px;" asp-area="" asp-controller="Home" asp-action="Prowait">
+                            <img src="~/images/fa6-solid_user.png" style="width:30px; height:30px;" />     Rbang
+                        </a>
+                    </li>
+
+                    <li class="nav-item " id="navItem">
+                        <a class="kanit id=navItem" style=" font-size: 18px;" asp-area="" asp-controller="Home" asp-action="Index">
+                            <img src="~/images/majesticons_logout-line.png" /> Logout
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</head>
+<body >
+
+
+    <br />
+
+    <img src="~/images/triangle-warning.png" class="center" style="width:350px; height:350px; margin-top:10px;" />
+    <br />
+
+    <h1 class="kanit" style="font-size:30px ; color: red; text-align:center;"> Waiting admin to identify </h1>
+   
+
+
+</body>
+</html>

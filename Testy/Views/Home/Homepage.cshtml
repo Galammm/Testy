@@ -1,0 +1,136 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Homepage</title>
+    <style>
+
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" >
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
+        <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" >
+
+
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+
+        a:link {
+            text-decoration: none;
+        }
+
+        li {
+            display: inline;
+            float: right;
+        }
+
+
+        .kanit {
+            font-family: "Kanit", sans-serif;
+        }
+
+        a.active, a:hover {
+            background: white;
+            transition: .5s;
+            color: rgb(37, 150, 190);
+        }
+
+        a {
+            padding: 15px 30px;
+            border-radius: 3px;
+            color: white;
+        }
+        
+
+
+
+    </style>
+</head>
+<body >
+
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm mb-2" style="background-color:rgb(37, 150, 190);">
+        <div class="container-fluid">
+
+            <img src="~/images/websiteiconz-z1369260010730 2.png" class="center" width="150px" height="150px" />
+
+
+            <div class="container-fluid d-sm-inline-flex justify-content-between">
+                <ul class="navbar-nav justify-content-sm-start">
+                    <li>
+                        <a class="active ,kanit " style="font-size: 20px;   margin-bottom:50%;margin-left:80px;" id="navItem" asp-area="" asp-controller="Home" asp-action="Homepage_Admin">Document </a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav justify-content-sm-end">
+
+                    <li class="nav-item " id="navItem">
+                        <a class="kanit id=navItem" style=" font-size: 20px;" asp-area="" asp-controller="Home" asp-action="Profile">
+                            <img src="~/images/fa6-solid_user.png" style="width:30px; height:30px;" />     Rbang
+                        </a>
+                    </li>
+
+                    <li class="nav-item " id="navItem">
+                        <a class="kanit id=navItem" style=" font-size: 20px;" asp-area="" asp-controller="Home" asp-action="Index">
+                            <img src="~/images/majesticons_logout-line.png" /> Logout
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <br />
+
+    <h1 class="kanit" style="font-size:50px ; color: black;">Document avalible</h1>
+    <hr />
+
+        <div>
+        <select class="kanit" style="font-size: 40px; border-radius: 30px; border: 0px white solid; margin-top:1%; margin-left:550px ; text-align:center;" name=" Department" id="Department">
+                <option value="RD">Department : RD </option>
+                <option value="RR">Department : RR</option>
+                <option value="RE">Department : RE</option>
+                <option value="RI">Department : RI</option>
+                <option value="RI">Department : all</option>
+            </select>
+        </div>
+
+        <br />
+         
+
+        <div>
+
+            <input class="kanit" type="search" value="Search" style="width:1100px;height:50px; font-size: 20px;  text-align:center ;  border-radius: 30px; border: 2px black solid; margin-left:200px;" />
+
+            <br />
+
+            <a style="text-decoration: none" asp-action="Formpage">
+            <p class = "big" style="width: 100%; height: 55px; font-size:20px ;color:black ; background: white; box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25); border-radius: 30px; border: 1px black solid ;">  <img src="~/images/mingcute_document-fill.png" style="margin-top:10px;margin-left:1% ; opacity: 0.8;" /> Receipt form </p>
+            </a>
+
+        <a   style="text-decoration: none" asp-action="Formpage">
+            <p class="big" style="width: 100%; height: 55px; font-size:20px ; color:black ; background: white; box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25); border-radius: 30px; border: 1px black solid ;">  <img src="~/images/mingcute_document-fill.png" style="margin-top:10px;margin-left:1%; opacity: 0.8; " /> Annual leave form </p>
+            </a>
+            
+            <a style="text-decoration: none" asp-action="Formpage">
+            <p class = "big" style="width: 100%; height: 55px; font-size:20px ; color:black ; background: white; box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25); border-radius: 30px; border: 1px black solid ;">  <img src="~/images/mingcute_document-fill.png" style="margin-top:10px;margin-left:1%; opacity: 0.8; " /> Sick leave form </p>
+            </a>
+
+            <a style="text-decoration: none" asp-action="Formpage">
+            <p class="big" style="width: 100%; height: 55px; font-size:20px ; color:black ; background: white; box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25); border-radius: 30px; border: 1px black solid ;">  <img src="~/images/mingcute_document-fill.png" style="margin-top:10px;margin-left:1%; opacity: 0.8; " /> Business leave form </p>
+            </a>
+
+            <a style="text-decoration: none" asp-action="Formpage">
+            <p class="big" style="width: 100%; height: 55px; font-size:20px ; color:black ; background: white; box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25); border-radius: 30px; border: 1px black solid ;">  <img src="~/images/mingcute_document-fill.png" style="margin-top:10px;margin-left:1%; opacity: 0.8; " /> Handesome form </p>
+            </a>
+
+            <a style="text-decoration: none" asp-action="Formpage">
+            <p class="big" style="width: 100%; height: 55px; font-size:20px ; color:black ; background: white; box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25); border-radius: 30px; border: 1px black solid ;">  <img src="~/images/mingcute_document-fill.png" style="margin-top:10px;margin-left:1%; opacity: 0.8; " /> Information form </p>
+            </a>
+
+
+        </div>
+
+     
+</body>
+</html>

@@ -1,0 +1,182 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Homepage</title>
+    <style>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" >
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
+        <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" >
+
+
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+
+        a:link {
+            text-decoration: none;
+        }
+
+        li {
+            display: inline;
+            float: right;
+            text-decoration: none;
+        }
+
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td, th {
+            border: none;
+            padding: 8px;
+        }
+
+        th {
+            background-color: rgba(240, 239, 239, 1);
+            font-size: 20px;
+            text-align: center;
+        }
+
+        td {
+            font-size: 15px;
+            text-align: center;
+        }
+
+        .kanit {
+            font-family: "Kanit", sans-serif;
+        }
+
+        a.active, a:hover {
+            background: white;
+            transition: .5s;
+            color: rgb(37, 150, 190);
+        }
+
+        a {
+            padding: 15px 30px;
+            border-radius: 3px;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm mb-2" style="background-color:rgb(37, 150, 190);">
+        <div class="container-fluid">
+
+            <img src="~/images/websiteiconz-z1369260010730 2.png" class="center" width="150px" height="150px" />
+
+
+            <div class="container-fluid d-sm-inline-flex justify-content-between">
+                <ul class="navbar-nav justify-content-sm-start">
+                    <li>
+                        <a class="kanit " style="font-size: 18px;   margin-bottom:50%;margin-left:10px;" id="navItem" asp-area="" asp-controller="Home" asp-action="Homepage_Admin">Document </a>
+                    </li>
+                    <li>
+                        <a class="active , kanit" style="font-size: 18px;  margin-bottom:50%;margin-left:30px;" id="navItem" asp-area="" asp-controller="Home" asp-action="ManageAdmin">User </a>
+                    </li>
+                    <li>
+                        <a class="kanit" style="font-size: 18px;  margin-bottom:50%;margin-left:50px; " id="navItem" asp-area="" asp-controller="Home" asp-action="Department_Admin">Department</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav justify-content-sm-end">
+
+                    <li class="nav-item " id="navItem">
+                        <a class="kanit id=navItem" style=" font-size: 18px;" asp-area="" asp-controller="Account" asp-action="Logout">
+                            <img src="~/images/fa6-solid_user.png" style="width:30px; height:30px;" />     Admin
+                        </a>
+                    </li>
+
+                    <li class="nav-item " id="navItem">
+                        <a class="kanit id=navItem" style=" font-size: 18px;" asp-area="" asp-controller="Account" asp-action="Logout">
+                            <img src="~/images/majesticons_logout-line.png" /> Logout
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <br />
+
+    <h1 class="center , kanit" style="font-size:50px ; color: black;">User Management</h1>
+    <hr />
+    <br />
+
+    <div>
+        <select class="kanit" style="font-size: 40px; border-radius: 30px; border: 0px white solid; margin-top:1%;  font-family: " Kanit", sans-serif;" name=" Department" id="Department">
+            <option value="RD">Department : all </option>
+            <option value="RR">Department : RR</option>
+            <option value="RE">Department : RE</option>
+            <option value="RI">Department : RI</option>
+            <option value="RI">Department : RD</option>
+        </select>
+    </div>
+
+
+    <br />
+
+    <input class="center , kanit" type="search" value="Search" style=" width:1000px;height:50px; font-size: 20px;  text-align:center ;  border-radius: 30px; border: 1px black solid;" />
+    <span>
+        <a>   <button onclick="myFunction()" class="kanit" style="width: 155px; height: 65px; font-size:20px;border: none; border-radius: 15px ; background: rgba(102, 182, 210, 1) ; color:white ;float:right;">Add new</button> </a>
+    </span>
+    <br />
+
+
+    <table class="kanit" style="margin-top:70px;">
+
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Department</th>
+            <th></th>
+            <th></th>
+        </tr>
+
+        <tr>
+            <td> 1</td>
+            <td> Rbang Pabin   </td>
+            <td> RD   </td>
+            <td>  <img src="~/images/bx_edit.png" style="opacity: 0.8;" />                    </td>
+            <td>  <img src="~/images/material-symbols_delete.png" style="opacity: 0.8;" />    </td>
+        </tr>
+        <tr>
+            <td> 2</td>
+            <td> Rbang Pabin   </td>
+            <td> RD   </td>
+            <td>  <img src="~/images/bx_edit.png" style="opacity: 0.8;" />                    </td>
+            <td>  <img src="~/images/material-symbols_delete.png" style="opacity: 0.8;" />    </td>
+        </tr>
+        <tr>
+            <td> 3</td>
+            <td> Rbang Pabin   </td>
+            <td> RD   </td>
+            <td>  <img src="~/images/bx_edit.png" style="opacity: 0.8;" />                    </td>
+            <td>  <img src="~/images/material-symbols_delete.png" style="opacity: 0.8;" />    </td>
+        </tr>
+        <tr>
+            <td> 4</td>
+            <td> Rbang Pabin   </td>
+            <td> RD   </td>
+            <td>  <img src="~/images/bx_edit.png" style="opacity: 0.8;" />                    </td>
+            <td>  <img src="~/images/material-symbols_delete.png" style="opacity: 0.8;" />    </td>
+        </tr>
+        <tr>
+            <td> 5</td>
+            <td> Rbang Pabin   </td>
+            <td> RD   </td>
+            <td>  <img src="~/images/bx_edit.png" style="opacity: 0.8;" />                    </td>
+            <td>  <img src="~/images/material-symbols_delete.png" style="opacity: 0.8;" />    </td>
+        </tr>
+
+
+    </table>
+
+</body>
+</html>

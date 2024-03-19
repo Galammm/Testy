@@ -1,0 +1,131 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Homepage</title>
+    <style>
+
+
+
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+
+        a:link {
+            text-decoration: none;
+        }
+
+        li {
+            display: inline;
+            float: right;
+        }
+
+        .kanit {
+            font-family: "Kanit", sans-serif;
+        }
+
+        a.active, a:hover {
+            background: white;
+            transition: .5s;
+            color: rgb(37, 150, 190);-
+        
+        }
+
+        a {
+            padding: 15px 30px;
+            border-radius: 3px;
+            color: white;
+        }
+
+    </style>
+
+ 
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm mb-2" style="background-color:rgb(37, 150, 190);">
+        <div class="container-fluid">
+
+            <img src="~/images/websiteiconz-z1369260010730 2.png" width="150px" height="150px" />
+
+
+            <div class="container-fluid d-sm-inline-flex justify-content-between">
+                <ul class="navbar-nav justify-content-sm-start">
+                    <li>
+                        <a class="kanit " style="font-size: 20px;   margin-bottom:50%;margin-left:80px;" id="navItem" asp-area="" asp-controller="Home" asp-action="Homepage">Document </a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav justify-content-sm-end">
+
+                    <li class="nav-item " id="navItem">
+                        <a class="kanit , active id=navItem" style=" font-size: 20px;" asp-area="" asp-controller="Home" asp-action="Profile">
+                            <img src="~/images/fa6-solid_user.png" style="width:30px; height:30px;" />     Rbang
+                        </a>
+                    </li>
+
+                    <li class="nav-item " id="navItem">
+                        <a class="kanit id=navItem" style=" font-size: 20px;" asp-area="" asp-controller="Home" asp-action="Index">
+                            <img src="~/images/majesticons_logout-line.png" /> Logout
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <br />
+
+
+    <h1 class="kanit" style="font-size:50px ; color: black;"> User Profile </h1>
+    <hr />
+
+    <br />
+
+
+    <img src="~/images/material-symbols_account-circle.png" style="width:200px ; height:200px; margin-left:600px;margin-top:1px; "/>
+
+    <br />
+
+   
+    <div class="center , kanit" >
+
+        <div >
+
+        <p  style="font-size:30px; margin-left:50px; "> Fullname     <span style="margin-left :325px;">  Email </span> </p>
+
+            <p style="font-size:20px; margin-left:50px; opacity:0.65; "> Rbang Pabin     <span style="margin-left :300px;">  Rbang@gmail.com </span> </p>
+
+        </div>
+
+        <div >
+            <p style="font-size:30px; margin-left:40px; "> Username     <span style="margin-left :280px;">  Department </span> </p>
+
+            <p style="font-size:20px; margin-left:60px; opacity:0.65; "> Rbang69     <span style ="margin-left:380px;">  RD </span> </p>
+
+        </div>
+
+        <div>
+
+            <p style="font-size:30px; margin-left:80px; "> ID     <span style="margin-left :350px;">  Day got hired </span> </p>
+
+            <p style="font-size:20px; margin-left:50px; opacity:0.65; "> 23042077     <span style="margin-left :350px;">  23 /04 /2077 </span> </p>
+
+
+            
+        </div>
+
+
+    </div>
+
+    <br />
+
+    <div style="margin-top:10px;">
+    <a asp-controller="Home" asp-action="Editpro" style="font-size:30px; color:rgb(37, 150, 190);">   Change password   </a>
+    <a asp-controller="Home" asp-action="Editpro" style="font-size:30px; color:rgb(37, 150, 190);">   Edit profile </a>
+   </div>
+   
+
+</body>
+</html>

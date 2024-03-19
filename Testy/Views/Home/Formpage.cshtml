@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Homepage</title>
+    <style>
+
+
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+
+        a:link {
+            text-decoration: none;
+        }
+
+        li {
+            display: inline;
+            float: right;
+        }
+
+        .kanit {
+            font-family: "Kanit", sans-serif;
+        }
+
+        a.active, a:hover {
+            background: white;
+            transition: .5s;
+            color: rgb(37, 150, 190);
+        }
+
+        a {
+            padding: 15px 30px;
+            border-radius: 3px;
+            color: white;
+        }
+
+    </style>
+</head>
+<body >
+
+
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm mb-2" style="background-color:rgb(37, 150, 190);">
+            <div class="container-fluid">
+
+                <img src="~/images/websiteiconz-z1369260010730 2.png"  width="200px" height="140px" />
+
+
+                <div class="container-fluid d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav justify-content-sm-start">
+                        <li>
+                            <a class="kanit " style="font-size: 20px;   margin-bottom:50%;margin-left:80px;" id="navItem" asp-area="" asp-controller="Home" asp-action="Homepage">Document </a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav justify-content-sm-end">
+
+                        <li class="nav-item " id="navItem">
+                            <a class="kanit id=navItem" style=" font-size: 20px;" asp-area="" asp-controller="Home" asp-action="Profile">
+                                <img src="~/images/fa6-solid_user.png" style="width:30px; height:30px;" />     Rbang
+                            </a>
+                        </li>
+
+                        <li class="nav-item " id="navItem">
+                            <a class="kanit id=navItem" style=" font-size: 20px;" asp-area="" asp-controller="Home" asp-action="Index">
+                                <img src="~/images/majesticons_logout-line.png" /> Logout
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+    <br />
+
+    <h1 class="kanit" style="font-size:50px ; color: black;">Recipt form</h1>
+    <hr />
+    <div>
+
+        <img src="~/images/413436414_762407289270852_8046645533556372319_n.jpg" class="center"  />
+        <br />
+        <button class="kanit"style="width: 280px; height: 80px; font-size:25px ; background: #66B6D2; border-radius: 30px; color:white; border: none;float:leaft;"> Dowload as .pdf</button>
+        <button class="kanit"style="width: 280px; height: 80px; font-size:25px ; background: #66B6D2; border-radius: 30px; color:white; border: none;float:right;"> Print </button>
+    </div>
+</body>
+</html>
